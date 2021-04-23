@@ -21,7 +21,7 @@ services:
 
   app:
     container_name: nextcloud-app
-    image: nextcloud:fpm-alpine
+    build: ./app
     restart: always
     volumes:
       - ${APP_HOST_MOUNT}:/var/www/html
